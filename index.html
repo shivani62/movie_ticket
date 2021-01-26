@@ -1,0 +1,76 @@
+<script type="text/javascript" src="index.js">
+</script>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <center>
+
+    <form method="post">
+      <fieldset width="300px">
+        <legend>
+          Booking details
+        </legend>
+
+<table>
+  <tr>
+    <td><label>Movie</label></td>
+    <td><select id="movies"  onchange="pic()" >
+      
+      <option>-Select-</option>
+      <option>Baghi</option>
+      <option> Singham</option>
+      <option>Dil Bechara</option>
+      <option>Kedarnath</option>
+      <option>Chichore</option>
+      <option>DDLJ</option>
+    </select>
+ <span><img width="20px" height="20px" id="mimg" src=""></span> 
+  </td>
+  </tr>
+  <tr>
+    <td><label>Theaters</label></td>
+    <td><select id="Theaters">
+      <option>-Select-</option>
+      <option>Theater 1</option>
+      <option>Theater 2</option>
+      <option>Theater 3</option>
+      <option>Theater 4</option>
+      <option>Theater 5</option>
+      <option>Theater 6</option>
+      <option>Theater 7</option>
+    </select></td>
+  </tr>
+
+  <tr>
+    <td><label>Date</label></td>
+    <td>
+      <input type="date" id="bookingdate">
+    </td>
+  </tr>
+  <tr>
+    <td>  <label>Email</label></td>
+    <td>  <input type="email" id="email"></td>
+  </tr>
+  <tr>
+    <td>  <label>#Tickets</label></td>
+    <td>  <input type="text" id="qty" placeholder="quantity" onkeyup="total()"></td>
+  </tr>
+
+  <tr>
+    <td><label> Total Price</label></td>
+    <td id="result"> (enter data first)</td>
+  </tr>
+</table>
+
+<input type="submit" value="Book Tickets">
+      </fieldset>
+
+    </form>
+    </center>
+  </body>
+</html>
